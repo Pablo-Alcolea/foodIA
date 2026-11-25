@@ -1,0 +1,193 @@
+[
+  {
+    "id": "spanish-omelette", "name": "Quick Spanish omelette", "minutes": 20, "level": 1, "tint": "#F4DFA8",
+    "nutrition": { "kcal": 410, "protein": 18, "carbs": 32, "fat": 22 },
+    "ingredients": [
+      { "name": "Eggs", "qty": 3, "unit": "pcs" },
+      { "name": "Potatoes", "qty": 2, "unit": "pcs" },
+      { "name": "Onion", "qty": 1, "unit": "pcs" },
+      { "name": "Olive oil" },
+      { "name": "Salt" }
+    ],
+    "steps": [
+      { "text": "Peel the potatoes and onion and cut them into thin slices." },
+      { "text": "Fry them in a pan with oil over medium heat.", "timer": 600 },
+      { "text": "Beat the eggs with a pinch of salt." },
+      { "text": "Drain the potatoes and mix them with the egg." },
+      { "text": "Cook the omelette for 2 minutes on each side.", "timer": 240 }
+    ]
+  },
+  {
+    "id": "fried-rice", "name": "Veggie fried rice with egg", "minutes": 20, "level": 1, "tint": "#E8DCC0",
+    "nutrition": { "kcal": 520, "protein": 17, "carbs": 78, "fat": 14 },
+    "ingredients": [
+      { "name": "Rice", "qty": 80, "unit": "g" },
+      { "name": "Eggs", "qty": 1, "unit": "pcs" },
+      { "name": "Red pepper", "qty": 1, "unit": "pcs" },
+      { "name": "Carrot", "qty": 1, "unit": "pcs" },
+      { "name": "Soy sauce" },
+      { "name": "Olive oil" }
+    ],
+    "steps": [
+      { "text": "Boil the rice for 12 minutes and drain it.", "timer": 720 },
+      { "text": "Cut the pepper and carrot into strips." },
+      { "text": "Stir-fry the vegetables with a little oil.", "timer": 240 },
+      { "text": "Add the rice and the beaten egg. Stir." },
+      { "text": "Add a splash of soy sauce and serve." }
+    ]
+  },
+  {
+    "id": "quesadillas", "name": "Chicken and cheese quesadillas", "minutes": 15, "level": 1, "tint": "#F1CDA4",
+    "nutrition": { "kcal": 610, "protein": 38, "carbs": 48, "fat": 28 },
+    "ingredients": [
+      { "name": "Wheat tortillas", "qty": 2, "unit": "pcs" },
+      { "name": "Chicken breast", "qty": 120, "unit": "g" },
+      { "name": "Grated cheese", "qty": 40, "unit": "g" },
+      { "name": "Red pepper", "qty": 1, "unit": "pcs" }
+    ],
+    "steps": [
+      { "text": "Cut the chicken and pepper into small pieces." },
+      { "text": "Cook the chicken in the pan.", "timer": 300 },
+      { "text": "Fill the tortillas with chicken, pepper and cheese." },
+      { "text": "Toast them for 2 minutes on each side.", "timer": 240 },
+      { "text": "Cut them into triangles and you are done." }
+    ]
+  },
+  {
+    "id": "zucchini-soup", "name": "Creamy zucchini soup", "minutes": 30, "level": 1, "tint": "#CFE3B9",
+    "nutrition": { "kcal": 280, "protein": 10, "carbs": 30, "fat": 13 },
+    "ingredients": [
+      { "name": "Zucchini", "qty": 1, "unit": "pcs" },
+      { "name": "Onion", "qty": 1, "unit": "pcs" },
+      { "name": "Potatoes", "qty": 1, "unit": "pcs" },
+      { "name": "Grated cheese", "qty": 20, "unit": "g" },
+      { "name": "Salt" }
+    ],
+    "steps": [
+      { "text": "Chop the zucchini, onion and potato." },
+      { "text": "Boil everything in salted water.", "timer": 1200 },
+      { "text": "Blend it with a little of the cooking water." },
+      { "text": "Serve with grated cheese on top." }
+    ]
+  },
+  {
+    "id": "tuna-pasta", "name": "Tuna and tomato pasta", "minutes": 15, "level": 1, "tint": "#F3C4A8",
+    "nutrition": { "kcal": 590, "protein": 30, "carbs": 82, "fat": 14 },
+    "ingredients": [
+      { "name": "Pasta", "qty": 100, "unit": "g" },
+      { "name": "Crushed tomatoes", "qty": 150, "unit": "g" },
+      { "name": "Canned tuna", "qty": 1, "unit": "can" },
+      { "name": "Garlic" }
+    ],
+    "steps": [
+      { "text": "Boil the pasta for the time on the packet.", "timer": 600 },
+      { "text": "Brown the garlic and add the tomatoes." },
+      { "text": "Mix the tuna into the sauce." },
+      { "text": "Combine the pasta with the sauce and serve." }
+    ]
+  },
+  {
+    "id": "spinach-omelette", "name": "Spinach and cheese omelette", "minutes": 10, "level": 1, "tint": "#D6E7C4",
+    "nutrition": { "kcal": 330, "protein": 22, "carbs": 3, "fat": 25 },
+    "ingredients": [
+      { "name": "Eggs", "qty": 2, "unit": "pcs" },
+      { "name": "Spinach", "qty": 50, "unit": "g" },
+      { "name": "Grated cheese", "qty": 20, "unit": "g" },
+      { "name": "Olive oil" },
+      { "name": "Salt" }
+    ],
+    "steps": [
+      { "text": "Wilt the spinach in a pan with a little oil.", "timer": 120 },
+      { "text": "Beat the eggs with a pinch of salt and pour them in." },
+      { "text": "Add the cheese, fold the omelette and cook it through.", "timer": 180 }
+    ]
+  },
+  {
+    "id": "lemon-chicken", "name": "Lemon chicken with rice", "minutes": 25, "level": 2, "tint": "#F3E7A0",
+    "nutrition": { "kcal": 560, "protein": 42, "carbs": 62, "fat": 14 },
+    "ingredients": [
+      { "name": "Chicken breast", "qty": 150, "unit": "g" },
+      { "name": "Lemon", "qty": 1, "unit": "pcs" },
+      { "name": "Garlic" },
+      { "name": "Rice", "qty": 80, "unit": "g" },
+      { "name": "Olive oil" },
+      { "name": "Salt" }
+    ],
+    "steps": [
+      { "text": "Put the rice on to boil for 12 minutes.", "timer": 720 },
+      { "text": "Cut the chicken into strips and add salt." },
+      { "text": "Brown the garlic and chicken in the pan.", "timer": 360 },
+      { "text": "Add the lemon juice and let it reduce.", "timer": 120 },
+      { "text": "Serve the chicken on top of the rice." }
+    ]
+  },
+  {
+    "id": "shakshuka", "name": "Shakshuka", "minutes": 25, "level": 2, "tint": "#F2B9A2",
+    "nutrition": { "kcal": 390, "protein": 20, "carbs": 24, "fat": 22 },
+    "ingredients": [
+      { "name": "Eggs", "qty": 2, "unit": "pcs" },
+      { "name": "Crushed tomatoes", "qty": 200, "unit": "g" },
+      { "name": "Red pepper", "qty": 1, "unit": "pcs" },
+      { "name": "Onion", "qty": 1, "unit": "pcs" },
+      { "name": "Cumin" }
+    ],
+    "steps": [
+      { "text": "Fry the onion and pepper gently.", "timer": 300 },
+      { "text": "Add the tomatoes and cumin. Let it simmer.", "timer": 600 },
+      { "text": "Make two holes and crack an egg into each one." },
+      { "text": "Cover the pan until the eggs are set.", "timer": 300 }
+    ]
+  },
+  {
+    "id": "chickpea-curry", "name": "Chickpea curry", "minutes": 30, "level": 2, "tint": "#F0D08E",
+    "nutrition": { "kcal": 540, "protein": 18, "carbs": 70, "fat": 20 },
+    "ingredients": [
+      { "name": "Chickpeas", "qty": 200, "unit": "g" },
+      { "name": "Coconut milk", "qty": 200, "unit": "ml" },
+      { "name": "Onion", "qty": 1, "unit": "pcs" },
+      { "name": "Crushed tomatoes", "qty": 100, "unit": "g" },
+      { "name": "Curry powder" },
+      { "name": "Rice", "qty": 80, "unit": "g" }
+    ],
+    "steps": [
+      { "text": "Fry the onion gently.", "timer": 300 },
+      { "text": "Add the curry powder, tomatoes and coconut milk." },
+      { "text": "Add the chickpeas and let it simmer.", "timer": 900 },
+      { "text": "Serve with rice." }
+    ]
+  },
+  {
+    "id": "baked-salmon", "name": "Oven-baked salmon with veggies", "minutes": 30, "level": 2, "tint": "#F6C7B6",
+    "nutrition": { "kcal": 480, "protein": 34, "carbs": 18, "fat": 30 },
+    "ingredients": [
+      { "name": "Salmon", "qty": 150, "unit": "g" },
+      { "name": "Zucchini", "qty": 1, "unit": "pcs" },
+      { "name": "Carrot", "qty": 1, "unit": "pcs" },
+      { "name": "Lemon", "qty": 1, "unit": "pcs" },
+      { "name": "Olive oil" }
+    ],
+    "steps": [
+      { "text": "Turn the oven on to 200 °C." },
+      { "text": "Cut the vegetables and put them on the tray with oil." },
+      { "text": "Place the salmon on top with lemon slices." },
+      { "text": "Bake until the salmon is cooked.", "timer": 1080 }
+    ]
+  },
+  {
+    "id": "mushroom-risotto", "name": "Mushroom risotto", "minutes": 40, "level": 3, "tint": "#E2D6C4",
+    "nutrition": { "kcal": 520, "protein": 16, "carbs": 74, "fat": 16 },
+    "ingredients": [
+      { "name": "Rice", "qty": 90, "unit": "g" },
+      { "name": "Mushrooms", "qty": 150, "unit": "g" },
+      { "name": "Onion", "qty": 1, "unit": "pcs" },
+      { "name": "Vegetable stock", "qty": 500, "unit": "ml" },
+      { "name": "Grated cheese", "qty": 30, "unit": "g" }
+    ],
+    "steps": [
+      { "text": "Fry the finely chopped onion.", "timer": 300 },
+      { "text": "Add the mushrooms and rice. Stir for 2 minutes.", "timer": 120 },
+      { "text": "Add the hot stock little by little, stirring all the time.", "timer": 1080 },
+      { "text": "Turn off the heat, add the cheese and let it rest.", "timer": 120 }
+    ]
+  }
+]
