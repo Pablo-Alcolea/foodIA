@@ -2,7 +2,7 @@ import { data, ui, commit, setUI, toast } from '../store.js';
 import { click } from '../lib/dom.js';
 import { esc, formatQty, uid } from '../lib/utils.js';
 import { icon, DISH } from '../ui/icons.js';
-import { backButton, heartButton, starBadge, emptyState } from '../ui/components.js';
+import { backButton, heartButton, starBadge, emptyState, recipePhoto, photoCredit } from '../ui/components.js';
 import { navigate } from '../router.js';
 import { findRecipe } from '../domain/catalog.js';
 import { missingIngredients, staplesToCheck } from '../domain/fridge.js';
@@ -50,7 +50,10 @@ export function recipeView(id) {
     ${backButton()}
     <div class="detail">
       <div class="dcol">
-        <div class="bigph" style="background:${recipe.tint}">${DISH}${starBadge(!missing.length)}</div>
+        <figure class="bigfig">
+          <div class="bigph" style="background:${recipe.tint}">${DISH}${recipePhoto(recipe, 'eager')}${starBadge(!missing.length)}</div>
+          ${photoCredit(recipe)}
+        </figure>
         <div class="panel">
           <h2>Ingredients</h2>
           <ul class="ing">${ingredients}</ul>

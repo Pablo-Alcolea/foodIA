@@ -35,7 +35,8 @@ svg.s{width:17px;height:17px}
 .card{position:relative;background:#fff;border:1.5px solid #1E2A22;border-radius:18px;overflow:hidden;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(30,42,34,.12)}
 .cardmain{display:block;width:100%;border:0;background:none;padding:0;text-align:left}
-.ph{position:relative;height:150px;display:flex;align-items:center;justify-content:center;border-bottom:1.5px solid #1E2A22}
+.ph{position:relative;height:150px;display:flex;align-items:center;justify-content:center;border-bottom:1.5px solid #1E2A22;overflow:hidden}
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .ph svg.dish{width:124px;height:93px}
 .star{position:absolute;top:10px;right:10px;width:38px;height:38px;border-radius:50%;background:#fff;border:1.5px solid #1E2A22;display:flex;align-items:center;justify-content:center;color:#B07800}
 .lock{position:absolute;left:10px;top:10px;display:inline-flex;gap:6px;align-items:center;background:#1E2A22;color:#fff;font-size:13px;font-weight:600;padding:6px 10px;border-radius:999px}
@@ -93,7 +94,10 @@ svg.s{width:17px;height:17px}
 .addb{min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid #1E2A22;background:#fff;font-size:14px;font-weight:600;display:inline-flex;align-items:center;gap:6px;flex:none}
 .addb.on{background:#E3F0E6;border-color:#2E7D4F;color:#1F5C39}
 .detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:32px;align-items:start}
-.bigph{position:relative;height:330px;border-radius:22px;border:1.5px solid #1E2A22;display:flex;align-items:center;justify-content:center}
+.bigph{position:relative;height:330px;border-radius:22px;border:1.5px solid #1E2A22;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bigfig{margin:0;display:flex;flex-direction:column;gap:6px}
+.credit{font-size:12px;color:#5B665E;padding-left:4px}
+.credit a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .bigph svg.dish{width:230px;height:172px}
 .dhead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
 .dcol{display:flex;flex-direction:column;gap:20px}

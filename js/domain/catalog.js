@@ -8,8 +8,8 @@ const byName = new Map();
 
 export async function loadCatalog() {
   const [recipes, ingredients] = await Promise.all([
-    fetch('data/recipes.json').then((r) => { if (!r.ok) throw new Error('recipes.json'); return r.json(); }),
-    fetch('data/ingredients.json').then((r) => { if (!r.ok) throw new Error('ingredients.json'); return r.json(); })
+    fetch('data/recipes.json', { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error('recipes.json'); return r.json(); }),
+    fetch('data/ingredients.json', { cache: 'no-cache' }).then((r) => { if (!r.ok) throw new Error('ingredients.json'); return r.json(); })
   ]);
   RECIPES = recipes;
   INGREDIENTS = ingredients;

@@ -1,7 +1,8 @@
 // Service worker: network first, cache as a fallback so the app also opens offline.
 // While you develop, you always get the latest files from the server.
+// Recipe photos (assets/recipes/) are not precached: each one is cached the first time it is shown.
 
-const CACHE = 'foodai-v1';
+const CACHE = 'foodai-v2';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest', 'css/styles.css',
   'data/recipes.json', 'data/ingredients.json',
@@ -28,9 +29,13 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const req = event.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  const url = new URL(req.url);
+  if (req.method !== 'GET' || url.origin !== location.origin) return;
+  // Always ask the server whether code and data changed (a quick 304 if not), so a new
+  // version shows up on the next reload. Photos rarely change and may come from the HTTP cache.
+  const fresh = url.pathname.includes('/assets/recipes/') ? fetch(req) : fetch(req, { cache: 'no-cache' });
   event.respondWith(
-    fetch(req)
+    fresh
       .then((res) => {
         const copy = res.clone();
         caches.open(CACHE).then((c) => c.put(req, copy));

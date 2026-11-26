@@ -42,6 +42,19 @@ export function matchText(missing) {
   return `<p class="match warn">Missing: ${esc(missing.map((m) => m.name.toLowerCase()).join(', '))}</p>`;
 }
 
+/** Dish photo over the tinted placeholder; if the image fails, the illustration underneath shows. */
+export function recipePhoto(recipe, loading = 'lazy') {
+  if (!recipe.image) return '';
+  return `<img class="photo" src="${esc(recipe.image)}" alt="" loading="${loading}" decoding="async" onerror="this.remove()">`;
+}
+
+export function photoCredit(recipe) {
+  const c = recipe.credit;
+  if (!c) return '';
+  const link = (href, text) => href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(text)}</a>` : esc(text);
+  return `<p class="credit">Photo: ${link(c.source, c.author)} · ${link(c.licenseUrl, c.license)}</p>`;
+}
+
 export function recipeCard(recipe, { macros = true } = {}) {
   const missing = missingIngredients(recipe, data.fridge);
   const locked = recipe.level > levelOf(data.xp);
@@ -49,6 +62,7 @@ export function recipeCard(recipe, { macros = true } = {}) {
     <button class="cardmain" ${click(() => navigate(`recipe/${recipe.id}`))}>
       <div class="ph" style="background:${recipe.tint}">
         ${DISH}
+        ${recipePhoto(recipe)}
         ${starBadge(!missing.length)}
         ${locked ? `<span class="lock">${icon('lock', 'i s')}${LEVELS[recipe.level].name} level</span>` : ''}
       </div>

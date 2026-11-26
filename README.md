@@ -104,6 +104,20 @@ Add an object to `data/recipes.json`:
 - `timer` is in seconds.
 - `level` can be 1 (Beginner), 2 (Home cook), or 3 (Chef).
 
+### Recipe photos
+
+Each recipe can have a photo and its credit:
+
+```json
+"image": "assets/recipes/my-recipe.webp",
+"credit": { "author": "Name", "license": "CC BY-SA 4.0", "licenseUrl": "https://…", "source": "https://commons.wikimedia.org/wiki/File:…" }
+```
+
+- Save photos in `assets/recipes/` as WebP, about 900 px wide, named after the recipe `id`.
+- The current photos come from Wikimedia Commons under free licenses (CC0, CC BY, CC BY-SA). CC BY and CC BY-SA require credit, so the recipe screen shows the author and license under the photo. Do not remove `credit`.
+- If you use your own photo, set `credit` to your name and the license you choose, or remove `credit`.
+- If the photo is missing or fails to load, the card shows the coloured background with the bowl illustration.
+
 ## Connect real image recognition
 
 `js/config.js` currently sets `RECOGNITION_ENDPOINT = null`, which enables demo mode: the photo is real, but the detected items are examples.
@@ -140,7 +154,8 @@ From the project folder, run:
 
 ```bash
 cd ~/foodIA
-git add README.md
-git commit -m "Translate project documentation to English"
-git push origin main
+git status
+git add .
+git commit -m "Describe changes"
+git push
 ```
